@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Pemesanan Online via WhatsApp</title>
+<h1>MASSAGE FAHMI</h1>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+
+        margin: 50;
+        padding:20;
+        background-image:url('./IMG/background.jpg.jpg') ;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    nav {
+            background-color: #fffafa00;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+} 
+
+        nav ul li a:hover {
+            background-color: #ac2222;
+            color: #fff;
+        }
+        
+    
+    h1,h2 {
+        text-align: center;
+    }
+    .product {
+        margin-bottom: 40px;
+    }
+    .product img {
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 150px;
+        width: 150px;
+    }
+    .product-info {
+        text-align: center;
+    }
+    .product-info h3 {
+        margin: 0;
+    }
+    .product-info p {
+        margin: 10px 0;
+    }
+    .product-info a {
+        display: block;
+        text-decoration: none;
+        color: #d42a2a;
+        font-weight: bold;
+    }
+    .product-info a:hover {
+        text-decoration: underline;
+    }
+    .product-container {
+    max-width: 300px; /* Atur lebar maksimal kontainer produk */
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #b31c1c;
+    border-radius: 5px;
+    background-color: rgba(253, 248, 248, 0.966); /* Opasitas ditentukan oleh nilai keempat (0.7 dalam contoh ini) */
+}
+.container {
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #b31c1c;
+    border-radius: 5px;
+    background-color: rgba(253, 248, 248, 0.966); /* Opasitas ditentukan oleh nilai keempat (0.7 dalam contoh ini) */
+}
+    #kontak {
+        max-width: 500px; /* Atur lebar maksimal kontainer kontak */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+       
+        
+
+        #kontak h2 {
+            color: #ac2222;
+        }
+
+        #kontak p {
+            color: #0e0d0d;
+            text-align: center;
+        }
+
+        #kontak ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #kontak ul li {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        #kontak ul li a {
+            text-decoration: none;
+            color: #830e0e;
+        }
+
+        #kontak ul li a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 450px) {
+
+    nav {
+        margin-bottom: 20px; /* tambahkan margin-bottom untuk memisahkan navbar dari konten lainnya */
+    }
+    nav img {
+        width: 40px;
+        margin-right: 10px; /* tambahkan margin agar logo tidak terlalu dekat dengan tautan */
+    }
+    nav ul li a {
+        padding: 6px 10px; /* sesuaikan padding agar tautan terlihat lebih baik */
+    }
+    .container {
+        padding: 10px;
+        width: 90%; /* sesuaikan lebar container agar tidak terlalu lebar */
+        margin: 0 auto; /* membuat container berada di tengah */
+    }
+    .product {
+    margin-bottom: 20px; /* tambahkan margin-bottom untuk memisahkan setiap produk */
+    display: flex; /* menggunakan flexbox */
+    justify-content: center; /* mengatur konten secara horizontal di tengah */
+    align-items: center; /* mengatur konten secara vertikal di tengah */
+    flex-wrap: wrap; /* memungkinkan wrapping untuk produk yang berukuran besar */
+}
+
+.product img {
+    max-width: 100%; /* gambar produk mengisi lebar kontainer */
+    height: auto; /* agar gambar tidak terdistorsi */
+    margin-bottom: 10px; /* tambahkan margin-bottom untuk memisahkan gambar dari informasi produk */
+    margin-right: 10px;
+}
+    .product-info {
+        margin-bottom: 10px; /* tambahkan margin-bottom untuk memisahkan setiap info produk */
+        width: 100%; /* agar info produk mengambil lebar maksimal */
+        text-align: center; /* untuk membuat teks berada di tengah */
+    }
+    
+    }
+    #kontak {
+        margin-top: 20px; /* tambahkan margin-top untuk memisahkan informasi kontak dari konten sebelumnya */
+    }
+    #kontak .container {
+        padding: 10px; /* sesuaikan padding untuk bagian kontak */
+    }
+    #kontak ul li {
+        margin-bottom: 8px; /* sesuaikan margin untuk daftar kontak */
+    }
+
+    .container {
+    /* CSS yang sudah ada */
+    margin-bottom: 20px; /* Tambahkan margin-bottom untuk memisahkan setiap kontainer */
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#Daftar-product">Pelayanan massage </a></li>
+            <li><a href="#kontak">Informasi Kontak</a></li>
+        </ul>
+    </nav>
+  
+    <div class="container"id="home">
+        <h1>Selamat datang di massage fahmi</h1> 
+    </div>
+
+<div class="container"id="Daftar-product">
+    <h2>pelayanan massage</h2>
+<div class="product-container">
+    <div class="product">
+        <img src="./IMG/massage.jpg.jpg" alt="massage">
+        <div class="product-info">
+            <h3>massage</h3>
+            <p>Harga: Rp 200k 1,5 jam</p>
+            <p>harga: Rp 250k 2 jam</p>
+            <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20pelayanan%20ini">Pesan via WhatsApp</a>
+        </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product">
+        <img src="./IMG/massage-refleksi.jpg.jpg" alt="refleksi+Massage">
+        <div class="product-info">
+            <h3>refleksi-massage</h3>
+            <p>Harga: Rp 260k 1.5 jam</p>
+            <p>Harga: Rp 300k 2 jam</p>
+            <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20pelayanan%20ini">Pesan via WhatsApp</a>
+        </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product">
+        <img src="./IMG/massage-totok wajah.jpg.jpg" alt="Totok Wajah+Massage ">
+        <div class="product-info">
+            <h3>totok wajah-massage</h3>
+            <p>Harga: Rp 250k 1.5 jam</p>
+            <p>Harga: Rp 280k 2 jam</p>
+            <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20pelayanan%20ini">Pesan via WhatsApp</a>
+        </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product">
+        <img src="./IMG/massage -bayi.jpg.jpg" alt="Massage bayi">
+        <div class="product-info">
+            <h3>massage-bayi</h3>
+            <p>Harga: Rp 160k 40 menit </p>
+            <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20pelayanan%20ini">Pesan via WhatsApp</a>
+        </div>
+    </div>
+</div>
+<div class="product-container">
+        <div class="product">
+            <img src="./IMG/massage-deep tisue.jpg.jpg" alt="MAA ">
+            <div class="product-info">
+                <h3>deep tissue-massage</h3>
+                <p>Harga: Rp 290k 2 jam</p>
+                <p>Harga: Rp 350k 2 jam</p>
+                <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20Pelayanan%2ini3">Pesan via WhatsApp</a>
+            </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <img src="./IMG/massage-bekam.jpg.jpg" alt="bekam+massage">
+                <div class="product-info">
+                    <h3>bekam-massage</h3>
+                    <p>Harga: Rp 350k 2 jam</p>
+                    <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <img src="./IMG/massage -bayi.jpg.jpg" alt="massage anak">
+                    <div class="product-info">
+                        <h3>massage-anak</h3>
+                        <p>Harga: Rp 170.000</p>
+                        <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="./IMG/body scrub.jpg.jpg" alt="scrub+massage">
+                        <div class="product-info">
+                            <h3>scrub-massage</h3>
+                            <p>Harga: Rp 250k 1.5 jam</p>
+                            <p>Harga: Rp 300k 2 jam</p>
+                            <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <img src="./IMG/massage-kerokan.jpg.jpg" alt="kerokan+massage">
+                            <div class="product-info">
+                                <h3>kerokan-massage</h3>
+                                <p>Harga: Rp 250k 1.5 jam</p>
+                                <p>Harga: Rp 270k 2 jam</p>
+                                <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                            <img src="./IMG/thai-massage.jpg.jpg" alt="thai+massage">
+                            <div class="product-info">
+                                <h3>thai-massage</h3>
+                                <p>Harga: Rp 300k 1.5 jam</p>
+                                <p>Harga: Rp 450k 2 jam</p>
+                                <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                            <img src="./IMG/laktasi.jpg.jpg" alt="laktasi+ massage">
+                            <div class="product-info">
+                                <h3>laktasi/ibuhamil-massage</h3>
+                                <p>Harga: Rp 250k 1.5 jam</p>
+                                <p>Harga: Rp 300k 2 jam</p>
+                                <a href="https://wa.me/6281292131508?text=Saya%20tertarik%20dengan%20layanan%20ini">Pesan via WhatsApp</a>
+                            </div>
+                            </div>
+                        </div>
+</div>
+<script>
+    function openWhatsApp(number, message) {
+        var additionalQuestion = "Apakah ada yang bisa saya bantu?";
+
+        var templateMessage = "Halo! Saya tertarik dengan layanan Anda. Mohon informasi lebih lanjut tentang [NAMA_LAYANAN]. Saya bernama [NAMA], berada di [ALAMAT], ingin memesan pada jam [JAM], dengan durasi [DURASI]. Pembayaran akan dilakukan via [PEMBAYARAN]. Terima kasih.";
+
+        
+        templateMessage = templateMessage.replace("[NAMA_LAYANAN]", message.namaLayanan);
+        templateMessage = templateMessage.replace("[NAMA]", message.nama);
+        templateMessage = templateMessage.replace("[ALAMAT]", message.alamat);
+        templateMessage = templateMessage.replace("[JAM]", message.jam);
+        templateMessage = templateMessage.replace("[DURASI]", message.durasi);
+        templateMessage = templateMessage.replace("[PEMBAYARAN]", message.pembayaran);
+        templateMessage = templateMessage.replace("[trapis]", message.trapis);
+
+        var encodedMessage = encodeURIComponent(templateMessage);
+
+      
+        var whatsappURL = "https://wa.me/081292131508" + number + "/?text=" + encodedMessage;
+
+        window.open(whatsappURL, '_blank');
+    }
+</script>
+<div id="kontak">
+    <div class="container">
+    <h2>Informasi Kontak</h2>
+    <p>Anda juga dapat menghubungi kami melalui:</p>
+    <ul>
+        <li>Instagram: <a href="https://www.instagram.com/nama_akun_instagram/">Nama Akun Instagram</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/nama_halaman_facebook/">Nama Halaman Facebook</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</body>
+
+</html>
